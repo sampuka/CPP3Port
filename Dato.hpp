@@ -22,7 +22,7 @@ public:
     int ugedag();	  // mandag: 1; tirsdag 2; ..... søndag: 7.
     std::string ugedagTekst();
     
-    void print();
+    std::string print();
     ~Dato();
     void setDatoPlusEn();
     void setDatoMinusEn();
