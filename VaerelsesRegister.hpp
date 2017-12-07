@@ -11,7 +11,7 @@ public:
     VaerelsesRegister();
     ~VaerelsesRegister();
 
-    void tilfoejVaerelse(int vaerelsesNummer, int stoerrelse, float prisPerNat);
+    void tilfoejVaerelse(int vaerelsesNummer, int stoerrelse);
     int findVaerelse(Dato dato, int antalOvernatning, int antalGaester);
     
 private:

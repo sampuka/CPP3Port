@@ -16,7 +16,7 @@ public:
     void printReservationer();
 
     int nyReservation(Kunde &kunde, Dato dato, int antalOvernatninger, int antalGaester);
-    void tilfoejVaerelse(int vaerelsesNummer, int stoerrelse, float prisPerNat);
+    void tilfoejVaerelse(int vaerelsesNummer, int stoerrelse);
     
 private:
     std::string navn;

@@ -1,10 +1,13 @@
 #include "Vaerelse.hpp"
 
-Vaerelse::Vaerelse(int _vaerelsesNummer, int _stoerrelse, float _prisPerNat)
+#include <iostream>
+
+using namespace std;
+
+Vaerelse::Vaerelse(int _vaerelsesNummer, int _stoerrelse)
 {
     vaerelsesNummer = _vaerelsesNummer;
     stoerrelse = _stoerrelse;
-    prisPerNat = _prisPerNat;
 }
 
 Vaerelse::~Vaerelse()
@@ -18,8 +21,11 @@ bool Vaerelse::erLedig(Dato dato, int antalOvernatninger, int antalGaester)
     
     for (int i = 0, datoen = dato.getDatoen(); i < antalOvernatninger; i++, datoen++)
 	for (Dato dat : optagedeDatoer)
+	{
+	    //cout << dat.getDatoen() << " " << datoen << endl;
 	    if (dat.getDatoen() == datoen)
 		return false;
+	}
     
     return true;
 }

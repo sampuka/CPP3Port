@@ -44,7 +44,7 @@ int Hotel::nyReservation(Kunde &kunde, Dato dato, int antalOvernatninger, int an
     return 1;
 }
 
-void Hotel::tilfoejVaerelse(int vaerelsesNummer, int stoerrelse, float prisPerNat)
+void Hotel::tilfoejVaerelse(int vaerelsesNummer, int stoerrelse)
 {
-    vaerReg.tilfoejVaerelse(vaerelsesNummer, stoerrelse, prisPerNat);
+    vaerReg.tilfoejVaerelse(vaerelsesNummer, stoerrelse);
 }

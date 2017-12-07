@@ -8,7 +8,7 @@
 class Vaerelse
 {
 public:
-    Vaerelse(int _vaerelsesNummer, int _stoerrelse, float _prisPerNat);
+    Vaerelse(int _vaerelsesNummer, int _stoerrelse);
     ~Vaerelse();
     
     bool erLedig(Dato dato, int antalOvernatninger, int antalGaester);
@@ -20,7 +20,6 @@ private:
     int vaerelsesNummer;
     int stoerrelse;
     std::vector<Dato> optagedeDatoer;
-    float prisPerNat;
 };
 
 #endif

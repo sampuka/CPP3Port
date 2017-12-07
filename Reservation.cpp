@@ -21,6 +21,7 @@ void Reservation::printInfo()
 {
     cout << "Reservation af " << kunde->getNavn() << " for "
 	 << antalGaester << " gæster i "
-	 << antalOvernatninger << " overnatninger fra "
+	 << antalOvernatninger << " overnatninger i værelse "
+	 << vaerelsesNummer << " fra "
 	 << dato.getDatoen() << endl;
 }
