@@ -15,6 +15,7 @@ public:
     void optagDatoer(Dato dato, int antalOvernatninger);
 
     int getVaerelsesNummer();
+    int getStoerrelse();
     
 private:
     int vaerelsesNummer;

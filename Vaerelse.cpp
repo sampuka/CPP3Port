@@ -44,3 +44,8 @@ int Vaerelse::getVaerelsesNummer()
 {
     return vaerelsesNummer;
 }
+
+int Vaerelse::getStoerrelse()
+{
+    return stoerrelse;
+}

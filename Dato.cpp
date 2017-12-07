@@ -177,11 +177,11 @@ string Dato::ugedagTekst()
 
 string Dato::print()
 {
-    string to_return = "Den ";
+    string to_return = "d. ";
     to_return += to_string(getDag());
-    to_return += " i ";
+    to_return += "/";
     to_return += to_string(getMaaned());
-    to_return += ". år ";
+    to_return += "-";
     to_return += to_string(getAar());
     return to_return;
 }
