@@ -1,4 +1,4 @@
-OBJS = source.o Hotel.o VaerelsesRegister.o Vaerelse.o Reservation.o Kunde.o Dato.o Ydelser.o Betaling.o
+OBJS = source.o Hotel.o VaerelsesRegister.o Vaerelse.o Reservation.o Kunde.o Dato.o #Ydelser.o Betaling.o
 CC = g++
 DEBUG = -g
 CFLAGS = -Wall -c $(DEBUG) -std=c++11

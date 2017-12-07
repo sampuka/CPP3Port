@@ -10,19 +10,21 @@ VaerelsesRegister::~VaerelsesRegister()
 {
 }
 
-void VaerelsesRegister::tilfoejVaerelse(int vaerelsesNummer, int stoerrelse)
+void VaerelsesRegister::tilfoejVaerelse(int vaerelsesNummer, int stoerrelse, float prisPerNat)
 {
     vaerListe.push_back(
-	Vaerelse(vaerelsesNummer, stoerrelse)
+	Vaerelse(vaerelsesNummer, stoerrelse, prisPerNat)
 	);
 }
 
-int VaerelsesRegister::findVaerelse(Dato dato, int antalOvernatning, int antalGaester)
+int VaerelsesRegister::findVaerelse(Dato dato, int antalOvernatninger, int antalGaester)
 {
     for (Vaerelse vaer : vaerListe)
 	if (vaer.erLedig(dato, antalOvernatninger, antalGaester))
 	{
 	    vaer.optagDatoer(dato, antalOvernatninger);
-	    return &vaer;
+	    return vaer.getVaerelsesNummer();
 	}
+    
+    return -1;
 }

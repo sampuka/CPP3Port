@@ -5,10 +5,11 @@ using namespace std;
 int main()
 {
     Hotel hotel("Trivago", "Main Street, 5th Avenue");
+    hotel.tilfoejVaerelse(101, 4, 506.8);
 
     Kunde kunde1("Henrik Pontoppidan");
 
-    hotel.nyReservation(Dato("22072005"), 3, 5);
+    hotel.nyReservation(kunde1, Dato(20050722), 3, 5);
 
     hotel.printReservationer();
     

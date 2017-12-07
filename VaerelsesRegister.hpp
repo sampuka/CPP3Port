@@ -1,6 +1,8 @@
 #ifndef VAERELSESREGISTER_H
 #define VAERELSESREGISTER_H
 
+#include "Vaerelse.hpp"
+
 #include <vector>
 
 class VaerelsesRegister
@@ -9,7 +11,7 @@ public:
     VaerelsesRegister();
     ~VaerelsesRegister();
 
-    void tilfoejVaerelse(int vaerelsesNummer, int stoerrelse);
+    void tilfoejVaerelse(int vaerelsesNummer, int stoerrelse, float prisPerNat);
     int findVaerelse(Dato dato, int antalOvernatning, int antalGaester);
     
 private:

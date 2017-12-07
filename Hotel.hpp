@@ -2,6 +2,7 @@
 #define HOTEL_H
 
 #include "Reservation.hpp"
+#include "VaerelsesRegister.hpp"
 
 #include <string>
 #include <vector>
@@ -12,8 +13,10 @@ public:
     Hotel(std::string _navn, std::string _adresse);
     ~Hotel();
 
-    int nyReservation(Kunde kunde, Dato dato, int antalOvernatninger, int antalGaester);
-    void tilfoejVaerelse(int vaerelsesNummer, int stoerrelse);
+    void printReservationer();
+
+    int nyReservation(Kunde &kunde, Dato dato, int antalOvernatninger, int antalGaester);
+    void tilfoejVaerelse(int vaerelsesNummer, int stoerrelse, float prisPerNat);
     
 private:
     std::string navn;
@@ -23,4 +26,4 @@ private:
     std::vector<Reservation> reservListe;
 };
 
-#endif HOTEL_H
+#endif
