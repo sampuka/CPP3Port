@@ -17,6 +17,8 @@ public:
 
     int nyReservation(Kunde &kunde, Dato dato, int antalOvernatninger, int antalGaester);
     void tilfoejVaerelse(int vaerelsesNummer, int stoerrelse);
+    void tilfoejYdelse(int vaerelsesNummer, float beloeb);
+    void checkud(int vaerelsesNummer);
     
 private:
     std::string navn;
